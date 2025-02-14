@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <main class="px-6 bg-zinc-800 text-white">
+    <main class="bg-zinc-800 text-white">
         <!-- Hero Section -->
-        <section class="flex flex-col gap-y-6">
-            <div>
-                <div></div>
+        <section class="px-8 flex flex-col gap-y-4 items-start">
+            <div class="flex gap-x-2 items-center text-lg">
+                <i class="fa-solid fa-minus fa-lg text-red-400"></i>
                 <p>PROFESSIONAL PHOTOGRAPHER</p>
             </div>
             
             <h1 class="text-5xl font-bold">Don Draper</h1>
 
             <!-- Socials -->
-            <div class="flex gap-x-5">
+            <div class="flex gap-x-5 py-2 ">
                 <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
                 <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
                 <a href=""><i class="fa-brands fa-dribbble fa-lg"></i></a>
@@ -33,16 +33,67 @@
                 maiores nemo eius quas, ex, tempora blanditiis nisi eos quo impedit a, incidunt eum. Iure, consequatur!
             </p>
             
-            <button type="button" class="self-start border-2 border-red-400 p-2 rounded ">VIEW PORTFOLIO</button>
+            <button type="button" class="border-2 border-red-400 p-2 rounded">VIEW PORTFOLIO</button>
 
-            <figure>
+            <figure class="my-8">
                 <img src="assets/images/showcase.jpg" alt="Two models">
             </figure>
+        </section>
 
-            <blockquote>
-                &quot;We've learned to fly the air like birds, we've learned to swim the seas like fish, and yet we haven't learned to walk the earth as brothers and sisters.&quot;
-                <p>&mdash; Martin Luther King Jr., <span>Love</span></p>
-            </blockquote>
+        <blockquote class="bg-zinc-700/60 p-10 text-2xl text-center space-y-6">
+            <p>
+                &ldquo; We've learned to fly the air like birds, we've learned to swim the seas like fish, and yet we haven't learned to walk the earth as brothers and sisters. &rdquo;
+            </p>
+            <p class="text-xl font-bold">&mdash; Martin Luther King Jr., <em>Love</em></p>
+        </blockquote>
+
+        <!-- About Me -->
+        <section class="p-8 flex flex-col gap-y-4 items-start">
+            <div class="flex gap-x-2 items-center text-lg">
+                <i class="fa-solid fa-minus fa-lg text-red-400"></i>
+                <p>ABOUT ME</p>
+            </div>
+
+            <h2 class="font-bold text-3xl">Professional<br />Photographer</h2>
+
+            <div class="text-lg py-4 space-y-2">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nesciunt odio ab earum voluptatibus dolorem reprehenderit quasi sequi enim magni sunt, dolore hic. Autem, sit. Debitis quisquam at facere ea.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae fuga eius officiis omnis consectetur laudantium quidem illo explicabo optio ex.
+                </p>
+            </div>
+
+            <div class="text-lg">
+                <h3 class="font-semibold text-xl text-red-400">My Awards</h3>
+                <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 1</p>
+                <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 2</p>
+                <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 3</p>
+            </div>
+
+            <figure class="my-8">
+                <img src="assets/images/about.jpg" alt="Another model">
+            </figure>
+        </section>
+
+        <!-- A Collage -->
+        <section class="bg-zinc-700/60 p-8 md:p-12 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:auto-rows-[490px]">
+            <figure class="md:col-span-2">
+                <img src="assets/images/gallery-1.jpg" alt="Two girls">
+            </figure>
+            <figure>
+                <img src="assets/images/gallery-2.jpg" alt="A woman with an afro">
+            </figure>
+            <figure>
+                <img src="assets/images/gallery-3.jpg" alt="Two children"/>
+            </figure>
+            <figure>
+                <img src="assets/images/gallery-4.jpg" alt="A man pointing towards the camera">
+            </figure>
+            <figure>
+                <img src="assets/images/gallery-5.jpg" alt="A dinner table at a party">
+            </figure>
         </section>
     </main>
 </body>
