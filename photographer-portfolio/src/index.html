@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <main class="bg-zinc-800 text-white max-w-screen-2xl mx-auto">
+    <main class="bg-zinc-800 text-white max-w-screen-2xl mx-auto xl:px-6">
 
         <!-- Hero Section -->
 
-        <section class="p-8 space-y-12 md:p-15 ">
+        <section class="p-8 space-y-12 md:p-15 xl:grid grid-cols-[2fr_1fr] gap-x-1">
 
-            <div class="flex flex-col gap-y-6 items-start">
+            <div class="self-center flex flex-col gap-y-6 items-start xl:gap-y-20">
                 <!-- Name and profession -->
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center text-lg">
@@ -24,43 +24,52 @@
                         <p>PROFESSIONAL PHOTOGRAPHER</p>
                     </div>
 
-                    <h1 class="text-5xl font-bold">Don Draper</h1>
+                    <h1 class="text-5xl font-bold xl:text-6xl ">Don Draper</h1>
                 </div>
 
-                <div class="space-y-6">
-                    <!-- Socials -->
-                    <div class="flex gap-x-6">
-                        <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
-                        <a href=""><i class="fa-brands fa-dribbble fa-lg"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
+                <div class="xl:flex">
+                    <div class="hidden xl:block w-10 rounded-full bg-red-400"></div>
+                    <div class="space-y-6 xl:space-y-8 xl:pl-10">
+                        <!-- Socials -->
+                        <div class="flex gap-x-6">
+                            <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+                            <a href=""><i class="fa-brands fa-dribbble fa-lg"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
+                        </div>
+                        <p class="text-lg xl:text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos incidunt optio pariatur quaerat.
+                            Harum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, quibusdam?
+                            maiores nemo eius quas, ex, tempora blanditiis nisi eos quo impedit a, incidunt eum. Iure,
+                            consequatur!
+                        </p>
+                        <button type="button" class="border-2 border-red-400 p-2 rounded md:text-xl xl:text-lg md:p-3">VIEW
+                            PORTFOLIO</button>
                     </div>
-
-                    <p class="text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos incidunt optio pariatur quaerat.
-                        Harum
-                        maiores nemo eius quas, ex, tempora blanditiis nisi eos quo impedit a, incidunt eum. Iure,
-                        consequatur!
-                    </p>
-
-                    <button type="button" class="border-2 border-red-400 p-2 rounded md:text-xl md:p-3">VIEW
-                        PORTFOLIO</button>
                 </div>
             </div>
 
-            <figure class="">
-                <img src="assets/images/showcase.jpg" alt="Two models">
-            </figure>
+            <div class="xl:grid grid-cols-[0.3fr_1.7fr_1fr] grid-rows-[0.2fr_1.2fr_1.6fr]">
+                <div class="hidden xl:block border-18 rounded border-red-400 col-start-1 col-end-3 row-start-1 row-end-3"></div>
+                <figure class="col-start-2 col-end-4 row-start-2 row-end-4">
+                    <img src="assets/images/showcase.jpg" alt="Two models" />
+                </figure>
+            </div>
         </section>
 
-        <blockquote class="bg-zinc-700/60 p-10 text-2xl text-center space-y-6 md:p-18 md:text-xl">
+        <blockquote class="bg-zinc-700/60 p-10 text-2xl text-center space-y-6 md:p-18 md:text-xl xl:px-60">
             <p>
                 &ldquo; We've learned to fly the air like birds, we've learned to swim the seas like fish, and yet we
                 haven't learned to walk the earth as brothers and sisters. &rdquo;
             </p>
-            <p class="text-xl font-bold">
-                &mdash; Martin Luther King Jr., <em>Love</em>
-            </p>
+
+            
+            <div class="xl:flex flex-col items-center gap-y-3">
+                <p class="text-xl xl:text-sm font-bold">
+                    &mdash; Martin Luther King Jr., <em>Love</em>
+                </p>
+                <div class="hidden xl:block w-12 h-2 bg-red-400 rounded-full"></div>
+            </div>
         </blockquote>
 
         <!-- About -->
