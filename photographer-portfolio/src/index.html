@@ -12,11 +12,26 @@
 <body>
     <main class="bg-zinc-800 text-white max-w-screen-2xl mx-auto xl:px-6">
 
+        <nav class="hidden md:flex justify-between items-center md:p-15 md:pt-20 md:pb-8 md:text-lg xl:text-base">
+            <p class="text-red-400">
+                JD
+            </p>
+            <div class="pl-15 flex gap-x-10">
+                <a href="#home"> Home </a>
+                <a href="#about"> About </a>
+                <a href="#services"> Services </a>
+                <a href="#contact"> Contact </a>
+            </div>
+            <div>
+                <button type="button" class="px-3 py-2 border-2 rounded border-red-400">BOOK NOW</button>
+            </div>
+        </nav>
+
         <!-- Hero Section -->
 
-        <section class="p-8 space-y-12 md:p-15 xl:grid grid-cols-[2fr_1fr] gap-x-1">
+        <section id="home" class="p-8 space-y-12 md:p-15 md:pt-4 xl:grid grid-cols-[1.2fr_0.8fr] gap-x-1">
 
-            <div class="self-center flex flex-col gap-y-6 items-start xl:gap-y-20">
+            <div class="self-center flex flex-col gap-y-6 items-start xl:gap-y-25 xl:pt-20">
                 <!-- Name and profession -->
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center text-lg">
@@ -24,7 +39,7 @@
                         <p>PROFESSIONAL PHOTOGRAPHER</p>
                     </div>
 
-                    <h1 class="text-5xl font-bold xl:text-6xl ">Don Draper</h1>
+                    <h1 class="text-5xl font-bold  xl:text-6xl">Don Draper</h1>
                 </div>
 
                 <div class="xl:flex">
@@ -38,19 +53,23 @@
                             <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
                         </div>
                         <p class="text-lg xl:text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos incidunt optio pariatur quaerat.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos incidunt optio pariatur
+                            quaerat.
                             Harum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, quibusdam?
                             maiores nemo eius quas, ex, tempora blanditiis nisi eos quo impedit a, incidunt eum. Iure,
                             consequatur!
                         </p>
-                        <button type="button" class="border-2 border-red-400 p-2 rounded md:text-xl xl:text-lg md:p-3">VIEW
+                        <button type="button"
+                            class="border-2 border-red-400 p-2 rounded md:text-xl xl:text-lg md:p-3">VIEW
                             PORTFOLIO</button>
                     </div>
                 </div>
             </div>
 
-            <div class="xl:grid grid-cols-[0.3fr_1.7fr_1fr] grid-rows-[0.2fr_1.2fr_1.6fr]">
-                <div class="hidden xl:block border-18 rounded border-red-400 col-start-1 col-end-3 row-start-1 row-end-3"></div>
+            <div class="xl:grid grid-cols-[0.25fr_1.75fr_1fr] grid-rows-[0.15fr_1.2fr_1.65fr]">
+                <div
+                    class="hidden xl:block border-18 rounded border-red-400 col-start-1 col-end-3 row-start-1 row-end-3">
+                </div>
                 <figure class="col-start-2 col-end-4 row-start-2 row-end-4">
                     <img src="assets/images/showcase.jpg" alt="Two models" />
                 </figure>
@@ -63,7 +82,7 @@
                 haven't learned to walk the earth as brothers and sisters. &rdquo;
             </p>
 
-            
+
             <div class="xl:flex flex-col items-center gap-y-3">
                 <p class="text-xl xl:text-sm font-bold">
                     &mdash; Martin Luther King Jr., <em>Love</em>
@@ -74,9 +93,9 @@
 
         <!-- About -->
 
-        <section class="p-8 space-y-12 md:p-15">
+        <section id="about" class="p-8 space-y-12 md:p-15 xl:grid grid-cols-[1.4fr_0.6fr] gap-x-2">
 
-            <div class="flex flex-col gap-y-6 items-start">
+            <div class="self-center flex flex-col gap-y-6 items-start">
 
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center text-lg">
@@ -87,7 +106,7 @@
                     <h2 class="font-bold text-3xl">Professional Photographer</h2>
                 </div>
 
-                <div class="text-lg pt-4 space-y-2">
+                <div class="text-lg pt-4 space-y-2 xl:text-base">
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nesciunt odio ab earum
                         voluptatibus dolorem reprehenderit quasi sequi enim magni sunt, dolore hic. Autem, sit. Debitis
@@ -99,11 +118,14 @@
                     </p>
                 </div>
 
-                <div class="text-lg">
-                    <h3 class="font-semibold text-xl text-red-400">My Awards</h3>
-                    <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 1</p>
-                    <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 2</p>
-                    <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 3</p>
+                <div class="self-stretch xl:flex flex-col gap-y-4">
+                    <div class="hidden xl:block w-7/10 h-4 rounded-full bg-red-400"></div>
+                    <div class="text-lg xl:text-base">
+                        <h3 class="font-semibold text-xl text-red-400">My Awards</h3>
+                        <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 1</p>
+                        <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 2</p>
+                        <p><i class="fa-solid fa-angles-right text-red-400 mr-2"></i>Award 3</p>
+                    </div>
                 </div>
             </div>
 
@@ -116,7 +138,7 @@
 
         <section
             class="bg-zinc-700/60 p-8 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:auto-rows-[490px] md:p-15">
-            <figure class="md:col-span-2">
+            <figure class="md:col-span-2 xl:row-span-2">
                 <img src="assets/images/gallery-1.jpg" alt="Two girls">
             </figure>
             <figure>
@@ -135,9 +157,9 @@
 
         <!-- Skills -->
 
-        <section class="p-8 space-y-12 md:p-15">
+        <section class="p-8 space-y-12 md:p-15 xl:grid grid-cols-[0.7fr_1.3fr] gap-x-10">
 
-            <div class="flex flex-col gap-y-6 items-start">
+            <div class="flex flex-col gap-y-6 items-start xl:gap-y-8 ">
 
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center text-lg">
@@ -164,15 +186,15 @@
                 <div class="w-full space-y-1">
                     <h3 class="font-semibold text-red-400 text-lg">Photography</h3>
                     <div class="bg-zinc-700/60 rounded-2xl">
-                        <div class="w-19/20 h-8 bg-red-400 px-4 rounded-2xl"><span class="text-lg">95%</span
-                                class="text-lg"></div>
+                        <div class="w-19/20 h-6 bg-red-400 px-4 rounded-2xl"><span
+                                class="text-lg xl:text-base">95%</span class="text-lg"></div>
                     </div>
                 </div>
 
                 <div class="w-full space-y-1">
                     <h3 class="font-semibold text-red-400 text-lg">Design Thinking</h3>
                     <div class="bg-zinc-700/60 rounded-2xl">
-                        <div class="w-9/10 h-8 bg-red-400 px-4 rounded-2xl"><span class="text-lg">90%</span
+                        <div class="w-9/10 h-6 bg-red-400 px-4 rounded-2xl"><span class="text-lg xl:text-base">90%</span
                                 class="text-lg">
                         </div>
                     </div>
@@ -181,7 +203,7 @@
                 <div class="w-full space-y-1">
                     <h3 class="font-semibold text-red-400 text-lg">Videography</h3>
                     <div class="bg-zinc-700/60 rounded-2xl">
-                        <div class="w-4/5 h-8 bg-red-400 px-4 rounded-2xl"><span class="text-lg">80%</span
+                        <div class="w-4/5 h-6 bg-red-400 px-4 rounded-2xl"><span class="text-lg xl:text-base">80%</span
                                 class="text-lg">
                         </div>
                     </div>
@@ -190,22 +212,25 @@
                 <div class="w-full space-y-1">
                     <h3 class="font-semibold text-red-400 text-lg">Social Innovation</h3>
                     <div class="bg-zinc-700/60 rounded-2xl">
-                        <div class="w-17/20 h-8 bg-red-400 px-4 rounded-2xl"><span class="text-lg">85%</span
-                                class="text-lg"></div>
+                        <div class="w-17/20 h-6 bg-red-400 px-4 rounded-2xl"><span
+                                class="text-lg xl:text-base">85%</span class="text-lg"></div>
                     </div>
                 </div>
             </div>
 
-            <figure class="">
-                <img src="assets/images/skills.jpg" alt="Silhouette of a woman with a sunset in the background" />
-            </figure>
+            <div class="-order-1 xl:flex gap-x-10">
+                <div class="hidden xl:block w-5 h-full rounded-full bg-red-400"></div>
+                <figure>
+                    <img src="assets/images/skills.jpg" alt="Silhouette of a woman with a sunset in the background" />
+                </figure>
+            </div>
         </section>
 
         <!-- Portfolio -->
 
-        <section class="p-8 space-y-12 bg-zinc-700/60 md:p-15">
+        <section class="p-8 space-y-12 bg-zinc-700/60 md:p-15 xl:grid xl:grid-cols-[1fr_1fr] gap-x-10">
 
-            <div class="flex flex-col gap-y-6 items-start">
+            <div class="self-center flex flex-col gap-y-6 items-start xl:gap-y-8">
 
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center text-lg">
@@ -229,7 +254,7 @@
                 </div>
             </div>
 
-            <div class="grid gap-y-6 md:grid-cols-[1fr_0.92fr_1fr] md:grid-rows-[1fr_5fr_1fr]">
+            <div class="-order-1 grid gap-y-6 md:grid-cols-[1fr_0.92fr_1fr] md:grid-rows-[1fr_5fr_1fr]">
                 <figure class="col-start-1 col-end-3 row-start-1 md:row-end-3">
                     <img src="assets/images/portfolio-1.jpg" alt="A group of terrestrial birds near a pond"
                         class="md:grayscale" />
@@ -244,15 +269,15 @@
 
         <!-- Services -->
 
-        <section class="p-8 space-y-12 md:p-15">
+        <section id="services" class="p-8 space-y-12 md:p-15 xl:grid xl:grid-cols-[1fr_1fr] gap-x-10">
 
-            <div class="flex flex-col gap-y-6 items-start">
+            <div class="self-center flex flex-col gap-y-6 items-start xl:gap-y-8">
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center text-lg mb-2">
                         <i class="fa-solid fa-minus fa-lg text-red-400"></i>
                         <p>WHY CHOOSE ME</p>
                     </div>
-                    <h2 class="font-bold text-3xl">Best services for you</h2>
+                    <h2 class="font-bold text-3xl">Best Services for You</h2>
                 </div>
 
                 <div class="space-y-3">
@@ -269,7 +294,7 @@
                 <button type="button" class="border-2 border-red-400 p-2 rounded md:text-xl md:p-3">LEARN MORE</button>
             </div>
 
-            <div class="flex flex-wrap *:basis-[300px] *:grow gap-6">
+            <div class="-order-1 flex flex-wrap *:basis-[300px] *:grow gap-6">
                 <div class="p-10 border-2 rounded border-red-400 text-center">
                     <figure class="w-11/20 mx-auto">
                         <img src="assets/images/service-1.png" alt="camera icon">
@@ -310,9 +335,9 @@
 
         <!-- Testimonials -->
 
-        <section class="p-8 space-y-12 bg-zinc-700/60 md:p-15">
+        <section class="p-8 space-y-12 bg-zinc-700/60 md:p-15 xl:grid xl:grid-cols-[1fr_1fr] gap-x-10 xl:pb-20">
 
-            <div class="flex flex-col gap-y-6 items-start text-lg">
+            <div class="flex flex-col gap-y-6 items-start text-lg xl:text-base xl:gap-y-9 xl:pt-2">
 
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center text-lg">
@@ -332,14 +357,14 @@
             </div>
 
             <div class="flex flex-col gap-y-2 md:gap-y-4">
-                <figure class="w-12 pb-4 self-end">
+                <figure class="w-12 pb-4 self-end xl:pb-2 ">
                     <img src="assets/images/testimonial-quote.png" alt="qoute icon">
                 </figure>
 
-                <p class="p-10 bg-red-400 text-black rounded text-lg">
+                <p class="p-10 bg-red-400 text-black rounded text-lg xl:text-base xl:p-8">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolor ab quos totam
                     delectus rerum. Voluptatum assumenda hic, esse adipisci dolor delectus laboriosam, quisquam
-                    alias beatae ullam commodi, culpa labore animi ipsa corrupti debitis harum unde ut ab libero.
+                    alias beatae ullam commodi, culpa labore.
                     Eius!
                 </p>
 
@@ -359,9 +384,9 @@
 
         <!-- News -->
 
-        <section class="p-8 space-y-12 md:p-15">
+        <section class="p-8 space-y-12 md:p-15 xl:grid xl:grid-cols-[1fr_1fr] gap-x-10 xl:pb-20">
 
-            <div class="flex flex-col gap-y-6 items-start text-lg">
+            <div class="self-center flex flex-col gap-y-6 items-start text-lg xl:text-base xl:gap-y-8">
 
                 <div class="space-y-2">
                     <div class="flex gap-x-2 items-center">
@@ -369,11 +394,12 @@
                         <p>NEWS</p>
                     </div>
 
-                    <h2 class="font-bold text-3xl">Photography across the World</h2>
+                    <h2 class="font-bold text-3xl">Across the World of Photography</h2>
                 </div>
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsa aliquam explicabo nesciunt
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ex!
                     voluptates dicta exercitationem, vitae dignissimos ipsam quia?
                 </p>
 
@@ -381,7 +407,7 @@
                     NEWS</button>
             </div>
 
-            <div class="flex *:basis-[300px] *:grow flex-wrap gap-6 *:md:p-6">
+            <div class="-order-1 flex *:basis-[300px] *:grow flex-wrap gap-6 *:md:p-6">
                 <div class="p-8 bg-zinc-700/60 border-t-2 border-red-400 flex flex-col items-start gap-y-4">
                     <figure>
                         <img src="assets/images/news-1.jpg" alt="a model">
@@ -422,10 +448,10 @@
 
         <!-- Connect with me -->
 
-        <section>
-            <div class="p-8 space-y-12 bg-zinc-700/60 md:p-15">
+        <section id="contact">
+            <div class="p-8 space-y-12 bg-zinc-700/60 md:p-15 xl:grid grid-cols-[1.4fr_0.6fr] gap-x-2">
 
-                <div class="flex flex-col gap-y-6 items-start text-lg">
+                <div class="self-center flex flex-col gap-y-6 items-start text-lg xl:text-base xl:gap-y-10 ">
 
                     <div class="space-y-2">
                         <div class="flex gap-x-2 items-center text-lg">
@@ -437,7 +463,7 @@
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsa aliquam explicabo
-                        nesciunt
+                        nesciunt Lorem ipsum dolor sit.
                         voluptates dicta exercitationem, vitae dignissimos ipsam quia?
                     </p>
 
@@ -450,7 +476,7 @@
                 </figure>
             </div>
 
-            <div class="p-8 flex flex-col gap-10 md:p-15">
+            <div class="p-8 flex flex-col gap-10 md:p-15 xl:grid xl:grid-cols-[1fr_1fr] gap-x-10">
                 <div class="flex flex-col gap-y-2">
                     <figure>
                         <img src="assets/images/form.jpg" alt="an iphone and a camera on top of a Macbook" />
@@ -467,7 +493,7 @@
                         class="py-3 border-2 border-red-400 rounded text-lg">Submit</button>
                 </div>
 
-                <div class="text-lg space-y-4">
+                <div class="self-center text-lg space-y-4 xl:text-base xl:space-y-10">
 
                     <div class="space-y-2">
                         <div class="flex gap-x-2 items-center text-lg">
@@ -483,25 +509,25 @@
                         itaque dolore sit dolorum? Expedita in repudiandae perspiciatis!
                     </p>
 
-                    <div class="flex flex-wrap *:basis-[300px] gap-6 *:grow ">
+                    <div class="flex flex-wrap *:basis-[300px] gap-6 *:grow text-lg md:text-base">
 
                         <div class="flex gap-x-6">
                             <figure class="w-32">
                                 <img src="assets/images/contact-icon-1.png" alt="telephone icon">
                             </figure>
 
-                            <div class="space-y-1 grow self-center">
+                            <div class="space-y-1 grow self-center pl-6 md:pl-0">
                                 <p class="text-red-400">Phone Number</p>
                                 <p>123-234-1234</p>
                             </div>
                         </div>
 
                         <div class="flex gap-x-6">
-                            <figure class="w-30">
+                            <figure class="w-32 md:w-30">
                                 <img src="assets/images/contact-icon-2.png" alt="email icon">
                             </figure>
 
-                            <div class="space-y-1 grow self-center">
+                            <div class="space-y-1 grow self-center pl-6 md:pl-0">
                                 <p class="text-red-400">Email Address</p>
                                 <p>draper@cool.com</p>
                             </div>
@@ -512,20 +538,20 @@
                                 <img src="assets/images/contact-icon-3.png" alt="world-wide-web icon">
                             </figure>
 
-                            <div class="space-y-1 grow self-center">
+                            <div class="space-y-1 grow self-center pl-6 md:pl-0">
                                 <p class="text-red-400 whitespace-nowrap">Website</p>
                                 <p>www.draper.com</p>
                             </div>
                         </div>
 
                         <div class="flex gap-x-6">
-                            <figure class="w-30">
+                            <figure class="w-40 md:w-30">
                                 <img src="assets/images/contact-icon-4.png" alt="location icon">
                             </figure>
 
-                            <div class="space-y-1 grow self-center md:overflow-visible">
+                            <div class="space-y-1 grow self-center pl-6 md:pl-0 md:overflow-visible">
                                 <p class="text-red-400">Address</p>
-                                <p class="whitespace-nowrap">177A Bleecker Street, NY</p>
+                                <p class="md:whitespace-nowrap">177A Bleecker Street, NY</p>
                             </div>
                         </div>
                     </div>
